@@ -1,6 +1,6 @@
 # EjerciciosMatriz
-Ejercicios  de manejo y creacion de matrices
-y sus soluciones, para practicar o recordar.
+Ejercicios de manejo y creacion de matrices
+para practicar o recordar.
 
 ## Ejercicio 1:
 Escribir un programa que imprima una X construida
