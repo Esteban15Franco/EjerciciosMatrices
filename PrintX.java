@@ -1,11 +1,24 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PrintX {
     public static void main(String[] args) {
-        int n;
+        int n = 0;
         Scanner s = new Scanner(System.in);
-        System.out.println("Ingrese el tamaño de la matriz n*n: ");
-        n = s.nextByte();
+
+        try {
+            System.out.println("Ingrese el tamaño de la matriz n*n: ");
+            n = s.nextByte();
+
+        }catch (InputMismatchException e){
+            main(args);
+            System.exit(0);
+        }
+
+        if (n == 0){
+            System.err.println("No se puede crear una matriz 0*0...");
+            System.exit(1);
+        }
 
         String[][] matriz = new String[n][n];
 
